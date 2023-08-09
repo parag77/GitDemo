@@ -53,6 +53,9 @@ public class BaseTest {
 			WebDriverManager.chromedriver().setup();
 			if(browserName.contains("headless")){
 			options.addArguments("headless");
+			
+			System.out.println("Hello Git");
+			System.out.println("SitaRam");
 			}		
 			driver = new ChromeDriver(options);
 			driver.manage().window().setSize(new Dimension(1440,900));//full screen
